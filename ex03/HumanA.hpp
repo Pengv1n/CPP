@@ -1,7 +1,3 @@
-//
-// Created by Akira Regenia on 7/17/22.
-//
-
 #ifndef CPP01_HUMANA_HPP
 #define CPP01_HUMANA_HPP
 

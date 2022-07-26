@@ -1,6 +1,3 @@
-//
-// Created by Akira Regenia on 7/17/22.
-//
 #include "Weapon.hpp"
 
 Weapon::Weapon(std::string type_):type(type_){}

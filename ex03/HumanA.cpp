@@ -1,6 +1,3 @@
-//
-// Created by Akira Regenia on 7/17/22.
-//
 #include "HumanA.hpp"
 
 HumanA::HumanA(const std::string name_, Weapon &weapon_):name(name_), weapon(weapon_){}

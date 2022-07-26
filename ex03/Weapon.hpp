@@ -1,7 +1,3 @@
-//
-// Created by Akira Regenia on 7/17/22.
-//
-
 #ifndef CPP01_WEAPON_HPP
 #define CPP01_WEAPON_HPP
 
