@@ -1,3 +1,0 @@
-/home/aregenia/school21/CPP/cmake-build-debug/CMakeFiles/CPP01.dir
-/home/aregenia/school21/CPP/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/aregenia/school21/CPP/cmake-build-debug/CMakeFiles/rebuild_cache.dir
