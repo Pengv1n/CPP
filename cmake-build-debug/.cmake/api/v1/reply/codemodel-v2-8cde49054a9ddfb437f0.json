@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CPP01::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CPP01-Debug-36b7d645f4d17abc6d3a.json",
+					"jsonFile" : "target-CPP01-Debug-7701abbeb2e7bb2e6034.json",
 					"name" : "CPP01",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/aregenia/Projects/CPP/CPP01/cmake-build-debug",
-		"source" : "/Users/aregenia/Projects/CPP/CPP01"
+		"build" : "/home/aregenia/school21/CPP/cmake-build-debug",
+		"source" : "/home/aregenia/school21/CPP"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 4
 	}
 }

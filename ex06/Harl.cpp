@@ -51,13 +51,31 @@ void Harl::complain(std::string level) {
 							   &Harl::warning,
 							   &Harl::error};
 
-	for (int i = 0; i <size_array; ++i)
+	int lvl = -1;
+	for (int i = 0; i < size_array; ++i)
 	{
 		if (complainLevel[i] == level) {
-			(this->*(func[i]))();
-			return;
+			lvl = i;
+			break;
 		}
 	}
-	std::cerr << "Unknown level" << std::endl;
+
+	switch (lvl) {
+		case 0:
+			{(this->*(func[0]))();
+			break;}
+		case 1:
+			{(this->*(func[1]))();
+			break;}
+		case 2:
+			{(this->*(func[2]))();
+			break;}
+		case 3:
+			{(this->*(func[3]))();
+			break;}
+		default:
+			{std::cerr << "Unknown level" << std::endl;
+			break;}
+	}
 }
 
