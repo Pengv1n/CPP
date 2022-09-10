@@ -4,7 +4,10 @@
 
 #include "MateriaSource.hpp"
 
-MateriaSource::MateriaSource() : equipped_slots(0) {}
+MateriaSource::MateriaSource() : equipped_slots(0) {
+        for (int i = 0; i < INVENTORY_SIZE; ++i)
+            this->inventory[i] = NULL;
+}
 
 MateriaSource::MateriaSource(const MateriaSource &copy) :
 equipped_slots(copy.equipped_slots) {
