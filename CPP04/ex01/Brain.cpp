@@ -7,9 +7,7 @@
 Brain::Brain() {
 	for (int i = 0; i < 100; ++i)
 	{
-		std::ostringstream os;
-		os << i + 1;
-		ideas[i] = os.str();
+		ideas[i] = std::to_string(i);
 	}
 	std::cout << "Construction Brain" << std::endl;
 }

@@ -4,7 +4,7 @@
 
 #include "Animal.hpp"
 
-Animal::Animal():type("Animal") {
+Animal::Animal(){
 	std::cout << this->type << " is create!" << std::endl;
 }
 
