@@ -11,7 +11,7 @@ static void checkGrade(short grade, int min = MIN_GRADE, int max = MAX_GRADE){
         throw Form::GradeTooHighException();
 }
 
-Form::Form() : name("pupa_form"), grade_sign(0), grade_exec(0) {}
+Form::Form() : name("pupa_form"), is_signed(false), grade_sign(0), grade_exec(0) {}
 
 Form::Form(const std::string &name, short grade_s, short grade_e) : name(name),
 is_signed(false),
@@ -59,6 +59,10 @@ const char*	Form::GradeTooHighException::what() const throw() {
 
 const char*	Form::AlreadySignedException::what() const throw() {
     return "Form cannot sign a form twice!";
+}
+
+const char* Form::FormNotSigned::what() const throw() {
+    return "Form cannot execute while not signed!";
 }
 
 std::ostream&	operator<<(std::ostream &o, const Form& form){
