@@ -4,7 +4,7 @@
 
 #include "Bureaucrat.hpp"
 
-Bureaucrat::Bureaucrat() : name("Pupa"), grade(MIN_GRADE) {}
+Bureaucrat::Bureaucrat() : name("Pupa"), grade(150) {}
 
 Bureaucrat::Bureaucrat(const std::string &n, short g) : name(n) {
     if (g < MAX_GRADE)
@@ -54,4 +54,25 @@ std::ostream    &operator<<(std::ostream &o, const Bureaucrat &b)
 {
     o << b.getName() << ", bureaucrat grade " << b.getGrade() << std::endl;
     return o;
+}
+
+void Bureaucrat::signForm(Form &form) const {
+    try{
+        form.beSigned(*this);
+        std::cout << name << " signed " << form.getName() << std::endl;
+    }
+    catch (std::exception &e){
+        std::cout << name << " couldn't sign " << form.getName() << " because " << e.what() << std::endl;
+    }
+}
+
+void Bureaucrat::executeForm(const Form &form) {
+	try {
+		form.execute(*this);
+		std::cout << name << " execute " << form.getName() << std::endl;
+	}
+	catch (std::exception &e) {
+		std::cout << name << " cant\'s execute " << form.getName();
+		std::cout << " because " << e.what() << std::endl;
+	}
 }
