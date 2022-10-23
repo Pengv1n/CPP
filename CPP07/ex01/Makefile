@@ -1,10 +1,10 @@
 CC := c++
 
-NAME := temp_fun
+NAME := Iter
 
 FLAGS := -Wall -Wextra -Werror -std=c++98
 
-HEADERS :=	whatever.hpp
+HEADERS :=	iter.hpp
 
 SRC :=	main.cpp
 

@@ -1,10 +1,11 @@
 CC := c++
 
-NAME := temp_fun
+NAME := Array
 
 FLAGS := -Wall -Wextra -Werror -std=c++98
 
-HEADERS :=	whatever.hpp
+HEADERS :=	Array.hpp	\
+			Array.tpp
 
 SRC :=	main.cpp
 
