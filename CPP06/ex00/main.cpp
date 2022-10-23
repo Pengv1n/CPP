@@ -7,7 +7,13 @@ int	main(int argc, char **argv)
 		std::cerr << "Number of arguments bot equal 1!" << std::endl;
 	else
 	{
-		ScalarConvert obj(argv[1]);
+		try {
+			ScalarConvert convert;
+			convert.printConvert(argv[1]);
+		}
+		catch (const std::exception &e){
+			std::cout << e.what() << std::endl;
+		}
 	}
 	return (0);
 }
