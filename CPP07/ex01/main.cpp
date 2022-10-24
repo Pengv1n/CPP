@@ -5,6 +5,7 @@
 #include <iostream>
 #include "iter.hpp"
 #include "math.h"
+#include <cstdlib>
 
 template<typename T>
 void	display( const T &whatever )
