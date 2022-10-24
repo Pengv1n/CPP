@@ -7,13 +7,15 @@ FLAGS := -Wall -Wextra -Werror -std=c++98
 HEADERS :=	Array.hpp	\
 			Array.tpp
 
-SRC :=	main.cpp
+
+
+SRC :=	main.cpp	\
 
 OBJ_DIR := obj
 
 OBJ := $(addprefix $(OBJ_DIR)/,$(SRC:.cpp=.o))
 
-$(OBJ_DIR)/%.o: %.cpp
+$(OBJ_DIR)/%.o: %.cpp $(HEADERS)
 	$(CC) $(FLAGS) $< -c -o $@
 
 all: $(OBJ_DIR)
@@ -21,7 +23,7 @@ all: $(OBJ_DIR)
 $(OBJ_DIR):
 	mkdir -p $@
 
-$(NAME): $(OBJ) $(HEADERS)
+$(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
